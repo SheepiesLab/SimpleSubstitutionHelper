@@ -79,7 +79,7 @@ while True:
             plaintext = plaintext[:i] + key[plaintext[i]] + plaintext[i + 1:]
     print("Plaintext: \n" + plaintext + "\n\n\n")
 
-    x = input("Modify mapping ([A-Z A-Z], * means skip): ")
+    x = input("Modify mapping (Type (X Y enter) to map X in ciphertext to Y in plaintext, type * to print texts): ")
     while x is not '*':
         y = x.split(' ')
         if y[0].isalpha() and (y[1].isalpha() or y[1] is '*'):
